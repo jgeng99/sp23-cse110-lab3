@@ -119,11 +119,13 @@
             <label><input type="radio" name="radio" value="no" /> No</label>
           </fieldset>
           <div>
-            <label for="name">Enter your name: </label>
+            <label for="name">Sign your name: </label>
             <input type="text" name="name" id="name" required>
           <div>
-            <label for="email">Enter your email: </label>
-            <input type="email" name="email" id="email" required>
+            <label for="sign">Sign date:</label>
+            <input type="date" id="sign" name="sign"
+                  value="2023-04-16"
+                  min="2023-04-16" max="2023-05-01">
           </div>
           <label for="good">Is the note clear?</label>
           <input list="choices" name="good">
@@ -138,7 +140,7 @@
           <label for="good1">Rank the note from 1 to 5:</label>
           <div>
           <select name="score" id="good1">
-              <option value="">Worst 1 - Best 5</option>
+              <option value="">1 Worst - 5 Best</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>

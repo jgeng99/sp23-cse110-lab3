@@ -2,13 +2,43 @@
     This is the style sheet for the documentation page.
 */
 
-p.IntroP {
+div * { /* Universal Selector (*) */
+    background-color: rgb(205, 225, 225);
+}
+
+h1 { /* Element Selector (element) */
+    text-align: center;
+}
+
+p.IntroP { /* Class Selector (.class) */
     color: rgb(106, 90, 205);
     text-align: center;
     text-decoration: underline;
 }
 
-nav.HeadInfo {
+[text-decoration] { /* Attribute Selector (e.g. [attribute=foo])  */
+    cursor: pointer;
+}
+
+h1, h2 { /* Selector List (element, element) */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ol li { /* Descendant Combinator (element element) */
+    font-family: "Courier New";
+}
+
+h1 ~ p { /* General sibling combinator (element ~ element) */
+    font-style: italic;
+}
+
+summary + p { /* Adjacent sibling combinator (element + element) */
+    font-family: "Papyrus";
+  }
+  
+
+nav.HeadInfo { /* Combining Two Selectors (element.class) */
     color: #FF7F50;
     text-align: center;
 }
@@ -18,7 +48,7 @@ a.a1:link {
     color: #191970;
 }
 
-a.a1:hover {
+a.a1:hover { /* Pseudo-class Selector (e.g. p:hover) */
     color: #FF00FF;
 }
 
@@ -60,7 +90,7 @@ h2.Header1 {
     background-color: Cornsilk;
 }
 
-p#Header1 {
+p#Header1 { /* ID Selector (#id) */
     font-size: 1.1pc;
     text-align: center;
 }
@@ -139,7 +169,7 @@ div.container {
     flex-wrap: wrap; /* Allow the children to wrap to a new row when there is not enough space */
 }
 
-div.container > div {
+div.container > div { /* Child Combinator (element > element) */
     background-color: #f1f1f1;
     justify-content: space-between; /* Space the children evenly along the main axis, with extra space between them */
     align-items: center; /* Align the children along the cross axis to the center */
@@ -174,6 +204,11 @@ video.videoo {
 }
 
 h2.Header4 {
+    color: #4682B4;
+    background-color: Cornsilk;
+}
+
+h2.Header5 {
     color: #4682B4;
     background-color: Cornsilk;
 }

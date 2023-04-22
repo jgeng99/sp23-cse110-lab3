@@ -1,0 +1,179 @@
+/*
+    This is the style sheet for the documentation page.
+*/
+
+p.IntroP {
+    color: rgb(106, 90, 205);
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav.HeadInfo {
+    color: #FF7F50;
+    text-align: center;
+}
+
+a.a1:link {
+    display: block;
+    color: #191970;
+}
+
+a.a1:hover {
+    color: #FF00FF;
+}
+
+a.a2:active {
+    display: inline-block;
+    color: #191970;
+}
+
+a.a2:hover {
+    color: #FF00FF;
+}
+
+a.a3:active {
+    display: inline;
+    color: #191970;
+}
+
+a.a3:hover {
+    color: #FF00FF;
+}
+
+a.a4:hover {
+    color: #FF00FF;
+}
+
+/* Media query for devices with a min screen width of 768px and max screen width of 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    nav.Plan {
+        color: hsl(147, 50%, 47%);
+        background-color: Cornsilk;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Bruno Ace SC', sans-serif;
+    }
+  }
+
+h2.Header1 {
+    color: #4682B4;
+    background-color: Cornsilk;
+}
+
+p#Header1 {
+    font-size: 1.1pc;
+    text-align: center;
+}
+
+h2.Header2 {
+    color: #4682B4;
+    background-color: Cornsilk;
+}
+
+h3.GuestPos {
+    font-size: 15pt
+}
+
+li#g1 {
+    font-size: 1.5em;
+}
+
+li#g2 {
+    font-size: 2.5ex;
+}
+
+li#g3 {
+    font-size: 2ch;
+}
+
+li#e1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    border-style: solid;
+    border-color: red;
+    border-width: medium;
+    border-radius: 15px 50px 30px;
+}
+
+li#e2 {
+    padding: 10px 10px 10px 10px;
+    margin: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: Violet;
+    border-width: medium;
+    border-radius: 15px 50px;
+}
+
+li#e3 {
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    border-style: solid;
+    border-color: Olive;
+    border-width: medium;
+    border-radius: 15px 50px 30px 5px;
+}
+
+h2.Header3 {
+    color: #4682B4;
+    background-color: Cornsilk;
+    position: static;
+}
+
+p#Header3 {
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+div.container {
+    display: flex; /* Apply flexbox to the container */
+    background-color: DodgerBlue;
+    flex-wrap: wrap; /* Allow the children to wrap to a new row when there is not enough space */
+}
+
+div.container > div {
+    background-color: #f1f1f1;
+    justify-content: space-between; /* Space the children evenly along the main axis, with extra space between them */
+    align-items: center; /* Align the children along the cross axis to the center */
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #1ac665;
+    padding: 11px;
+}
+
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 19px;
+text-align: center;
+}
+
+audio.audioo {
+    display: block;
+    margin: 0 auto;
+}
+
+video.videoo {
+    display: block;
+    margin: 0 auto;
+}
+
+h2.Header4 {
+    color: #4682B4;
+    background-color: Cornsilk;
+}

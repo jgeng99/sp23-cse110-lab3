@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <h1 style="color:#DC143C;text-align:center;">
+      <h1 style="color:#DC143C;">
         AI is BAD for Human, Documentation
       </h1>
       <p class="IntroP">
@@ -141,11 +141,11 @@
             It turns out that we need to be very careful with AI and
             its usage. 
           </p>
-        <h2>Others</h2>
+        <h2 class="Header5">Others</h2>
           <details>
             <summary>Special Thanks</summary>
-            I would like to thank Jianming for making this note for
-            the company
+            <p>I would like to thank Jianming for making this note for
+            the company</p>
           </details>
       </section>
 
@@ -155,11 +155,13 @@
         Fill Out the Followings
       </h3>
         <form>
-          <fieldset>
-            <legend>I confirm I have read through the notes</legend>
-            <label><input type="radio" name="radio" value="yes"> Yes</label>
-            <label><input type="radio" name="radio" value="no"> No</label>
-          </fieldset>
+          <div>
+            <fieldset>
+              <legend>I confirm I have read through the notes</legend>
+              <label><input type="radio" name="radio" value="yes"> Yes</label>
+              <label><input type="radio" name="radio" value="no"> No</label>
+            </fieldset>
+          </div>
           <div>
             <label for="name">Sign your name: </label>
             <input type="text" name="name" id="name" required>
@@ -170,15 +172,17 @@
                   value="2023-04-16"
                   min="2023-04-16" max="2023-05-01">
           </div>
-          <label for="good">Is the note clear?</label>
-          <input list="choices" name="good" id="good">
           <div>
-          <datalist id="choices">
+            <label for="good">Is the note clear?</label>
+            <input list="choices" name="good" id="good">
+          </div>
+          <div>
+            <datalist id="choices">
               <option value="Clear">
               <option value="OK">
               <option value="Not Clear">
               <option value="Terrible">
-          </datalist>
+            </datalist>
           </div>
           <label for="good1">Rank the note from 1 to 5:</label>
           <div>

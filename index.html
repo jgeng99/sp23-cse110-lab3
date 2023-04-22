@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="mystyle.css">
     <style>
+      @import url('https://fonts.cdnfonts.com/css/bruno-ace-sc');
       body {
         background-color: linen;
       }
@@ -20,57 +21,61 @@
       <h1 style="color:#DC143C;text-align:center;">
         AI is BAD for Human, Documentation
       </h1>
-      <p>
+      <p class="IntroP">
         This is the documentation page for the corporation "All About AI (AAA)," 
         or simply called Triple As.
       </p>
-      <nav>
+      <nav class="HeadInfo">
         Type: Documentation <br>
         Date: Apr 16, 2023 <br>
-        Attendance List: <a href="#">Jianming Geng</a>, <a href="#">Olen Must</a>, and <a href="#">Joff Bass</a><br><br>
+        Attendance List: <a href="#" class="a1">Jianming Geng</a> 
+                         <a href="#" class="a2">Olen Must</a>
+                         and <a href="#" class="a3">Joff Bass</a><br><br>
+      </nav>  
+      <nav class="Plan">
         Plan of Attack:
-        <ul>
-          <li>Last Meeting</li>
-          <li>Who Are the Guests for This Meeting</li>
-          <li>About This Seminar</li>
-          <li>Conclusion & Future Plan</li>
-        </ul>
       </nav>
+      <ul class="unorderlst">
+        <li>Last Meeting</li>
+        <li>Who Are the Guests for This Meeting</li>
+        <li>About This Seminar</li>
+        <li>Conclusion & Future Plan</li>
+      </ul>
     </header>
 
     <hr>
 
     <main>
       <section>
-        <h2>Last Meeting</h2>
-          <p>
+        <h2 class="Header1">Last Meeting</h2>
+          <p id="Header1">
             Last meeting we breifly talked about the potential of Ai
             and how human can benefit from it. For this meeting we will
             have some guests talk over for us why we cannot rely
             100% on AI but should be extra careful. In case you missed
-            last meeting, you can refer <a href="#">here</a> for last meeting's notes.
+            last meeting, you can refer <a href="#" class="a4">here</a> for last meeting's notes.
           </p>
       </section>
 
       <section>
-        <h2>Who Are the Guests for This Meeting</h2>
-        <h3>Positions</h3>
+        <h2 class="Header2">Who Are the Guests for This Meeting</h2>
+        <h3 class="GuestPos">Positions</h3>
           <ul>
-            <li>Jianming: CEO of CloseAI</li>
-            <li>Olen: CEO of Edison Electric Car</li>
-            <li>Joff: GreenStone VC head manager</li>
+            <li id="g1">Jianming: CEO of CloseAI</li>
+            <li id="g2">Olen: CEO of Edison Electric Car</li>
+            <li id="g3">Joff: GreenStone VC head manager</li>
           </ul>
-        <h3>Their Envisions</h3>
+        <h3 class="GuestEnv">Their Envisions</h3>
           <ul>
-            <li>Hinder the development of AI for at least 6 months</li>
-            <li>Get rid of AI system in all cars</li>
-            <li>Stop investing more money on AI projects</li>
+            <li id="e1">Hinder the development of AI for at least 6 months</li>
+            <li id="e2">Get rid of AI system in all cars</li>
+            <li id="e3">Stop investing more money on AI projects</li>
           </ul>
       </section>
 
       <div>
-        <h2>About This Seminar</h2>
-        <p>
+        <h2 class="Header3">About This Seminar</h2>
+        <p id="Header3">
           <span>This Seminar helps people who don't know AI to learn about it, especially 
             <b>its threat to human being as a whole</b>.</span> The guests will introduce
           different aspects of threats and warn the audience why and <strong>how 
@@ -82,25 +87,56 @@
             <li>Its development is uncontrollable</li>
             <li>The introduction of AI makes human think less critically</li>
           </ol>
+          <div class="container">
+            <div>AI</div>
+            <div>is</div>
+            <div>DANGEROUS!</div>
+          </div>
         </div>
         <h3><i>Image of Killer Cyborg</i></h3>
-          <img src="/img/killer_c.jpeg"
-          width="400" height="320"
-          alt="Horrible, Horrible Cyborg!!">
+          <div class="grid-container">
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+            <div class="grid-item"><img src="/img/killer_c.jpeg"
+              width="100" height="80"
+              alt="Cyborg"></div>
+          </div>
         <h3><i>Audio and Video Explanation of AI</i></h3>
           <div>
-            <audio controls>
+            <audio controls class="audioo">
               <source src="./img/audio.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
           </div>
-          <video width="400" height="320" controls>
+          <video width="400" height="320" controls class="videoo">
             <source src="./img/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
   
       <section>
-        <h2>Conclusion & Future Plan</h2>
+        <h2 class="Header4">Conclusion & Future Plan</h2>
           <p>
             It turns out that we need to be very careful with AI and
             its usage. 
